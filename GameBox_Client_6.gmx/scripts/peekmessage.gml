@@ -7,10 +7,9 @@ possible)
 [Argument2]: The buffer id to receive to. Leave out this argument or set
 it to 0 to use the default buffer.
 Returns amount of bytes recieved.
-
 NOTE:
 If you dont want to save the data to the defualt buffer, than do it like this:
 peekmessage(sockid, 0, bufferid);
 or peekmessage(sockid, bytestoreceive, bufferid);
 */
-return external_call(global._SokS, argument0, argument1, 0);//argument2);
+return external_call(global._SokS, argument0, argument1, 0); //argument[2]);

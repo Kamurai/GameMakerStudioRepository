@@ -11,4 +11,4 @@ it to 0 to use the default buffer.
   than send a message like this:
   sendmessage(sockid, "", 0, bufferid);
 */
-return external_call(global._SokD, argument[0], argument[1], argument[2], 0); // argument[0],argument[1], argument[2],argument[3]);
+return external_call(global._SokD, argument0, argument1, argument2, 0); // argument[0],argument[1], argument[2],argument[3]);

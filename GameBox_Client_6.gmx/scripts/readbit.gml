@@ -5,4 +5,3 @@
   returns the bit value (true/false)
 */
 return (argument0 & power(2, argument1))>0;
-//return (argument[0] & power(2, argument[1]))>0;

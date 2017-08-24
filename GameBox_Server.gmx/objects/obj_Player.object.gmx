@@ -59,7 +59,7 @@ Name="";
 //drawStats=false;
 obj_Controller.PlayerCount+=1;
 Index=obj_Controller.PlayerCount-1;
-Roster[Index]="-1";
+//obj_Controller.Roster[Index]="-1";
 
 
 Refused = 0;
@@ -101,20 +101,7 @@ if(Refused == 0)
     
     //send roster
     scr_SendRoster();
-    /*
-    clearbuffer();
-    writebyte(getplayers);
-    writebyte(obj_Controller.PlayerCount);
     
-    //walk through roster
-    for(i=0;i&lt;obj_Controller.PlayerCount;i+=1)
-    {
-        //send name     //set index on client side
-        writestring(obj_Controller.Roster[i]);
-    }
-    
-    send_client("all");
-    */
 </string>
           </argument>
         </arguments>

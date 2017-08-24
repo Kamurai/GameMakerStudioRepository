@@ -25,25 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_Player.Holding == (0))
+            <string>if(Hold &lt; 0)
 {
-    if(Hold &lt; 0)
-    {
-        scr_GameObjectRotation(1);
-        scr_DefineForRotation();
-    }
-    else
-    {
-        scr_SendUpdateObjectRotation();
-    }
-}
-else
-{
-    if(Hold &gt;= 0)
-    {
-        scr_Rotation(1);
-        scr_SendUpdateObjectRotation();
-    }
+    scr_GameObjectRotation(1);
+    scr_DefineForRotation();
 }
 </string>
           </argument>
@@ -67,25 +52,10 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_Player.Holding == (0))
+            <string>if(Hold &lt; 0)
 {
-    if(Hold &lt; 0)
-    {
-        scr_GameObjectRotation(-1);
-        scr_DefineForRotation();
-    }
-    else
-    {
-        scr_SendUpdateObjectRotation();
-    }
-}
-else
-{
-    if(Hold &gt;= 0)
-    {
-        scr_Rotation(-1);
-        scr_SendUpdateObjectRotation();
-    }
+    scr_GameObjectRotation(-1);
+    scr_DefineForRotation();
 }
 </string>
           </argument>

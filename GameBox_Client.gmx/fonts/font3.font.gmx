@@ -22,10 +22,10 @@
     <glyph character="108" x="54" y="73" w="7" h="14" shift="10" offset="1"/>
     <glyph character="61" x="53" y="89" w="8" h="11" shift="10" offset="1"/>
     <glyph character="77" x="44" y="20" w="9" h="14" shift="10" offset="0"/>
+    <glyph character="56" x="79" y="89" w="6" h="14" shift="10" offset="2"/>
     <glyph character="122" x="55" y="20" w="9" h="14" shift="10" offset="0"/>
     <glyph character="35" x="0" y="37" w="8" h="15" shift="10" offset="1"/>
     <glyph character="115" x="72" y="73" w="7" h="14" shift="10" offset="1"/>
-    <glyph character="56" x="79" y="89" w="6" h="14" shift="10" offset="2"/>
     <glyph character="105" x="36" y="73" w="7" h="14" shift="10" offset="1"/>
     <glyph character="47" x="98" y="20" w="8" h="15" shift="10" offset="0"/>
     <glyph character="80" x="27" y="73" w="7" h="14" shift="10" offset="2"/>
@@ -34,12 +34,12 @@
     <glyph character="48" x="71" y="89" w="6" h="14" shift="10" offset="2"/>
     <glyph character="32" x="0" y="0" w="10" h="18" shift="10" offset="0"/>
     <glyph character="91" x="51" y="106" w="3" h="16" shift="10" offset="4"/>
+    <glyph character="114" x="18" y="89" w="7" h="14" shift="10" offset="2"/>
+    <glyph character="97" x="80" y="54" w="8" h="14" shift="10" offset="1"/>
     <glyph character="57" x="63" y="89" w="6" h="14" shift="10" offset="2"/>
     <glyph character="79" x="90" y="37" w="8" h="14" shift="10" offset="1"/>
-    <glyph character="98" x="70" y="54" w="8" h="14" shift="10" offset="1"/>
-    <glyph character="97" x="80" y="54" w="8" h="14" shift="10" offset="1"/>
     <glyph character="107" x="100" y="54" w="8" h="14" shift="10" offset="1"/>
-    <glyph character="114" x="18" y="89" w="7" h="14" shift="10" offset="2"/>
+    <glyph character="98" x="70" y="54" w="8" h="14" shift="10" offset="1"/>
     <glyph character="46" x="88" y="106" w="2" h="14" shift="10" offset="3"/>
     <glyph character="38" x="87" y="89" w="6" h="14" shift="10" offset="2"/>
     <glyph character="100" x="30" y="54" w="8" h="14" shift="10" offset="1"/>

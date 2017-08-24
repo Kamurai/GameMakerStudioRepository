@@ -46,10 +46,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Version = 6;
+            <string>Version = 5;
 SubVersion = 0;
 //initiate 39dll
-dllinit(true,true);
+dllinit(false,true,true);
+//dllinit(0,true,false);
 
 isConnected=0;
 connectedClients=0;
@@ -58,8 +59,7 @@ FromServer = 0;
 
 Roster[0] = 0;
 
-//ObjectCount[0] = 0;
-ObjectCount = 0;
+ObjectCount = 0; //ObjectCount[0] = 0;
 ObjectRoster[0] = -1;
 
 //set font
@@ -349,7 +349,7 @@ bound_y = view_yview + 384 + 8*3 + 8*3;
             <kind>1</kind>
             <string>clearbuffer();
 writebyte(leave);
-sendmessage(obj_Connection.socket, obj_Connection.client_ip, obj_Connection.client_port); //send to server
+sendmessage(obj_Connection.socket, obj_Connection.HostIP, obj_Connection.HostPort); //send to server
 </string>
           </argument>
         </arguments>
@@ -376,7 +376,7 @@ sendmessage(obj_Connection.socket, obj_Connection.client_ip, obj_Connection.clie
 //draw_text((room_width/2),(room_height-32), "Version: ");
 //draw_text((room_width/2)+48,(room_height-32), Version);
 
-draw_text((x+12),(y+8), "Version: " + string(Version) + "." + string(SubVersion));
+draw_text((view_xview[0]+12),(view_yview[0]+8), "Version: " + string(Version) + "." + string(SubVersion));
 </string>
           </argument>
         </arguments>

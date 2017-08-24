@@ -25,6 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>image_speed = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>ParentIndex = obj_Controller.Pass;
 Index = (ParentIndex).SubMenuIndex;
 
@@ -53,50 +74,6 @@ scale = offset;
             <string>image_speed = 0;
 sprite_index = spr_ContainerSubMenu;
 image_index = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>image_speed = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>Adjust = false;
-
-
 </string>
           </argument>
         </arguments>
@@ -215,7 +192,7 @@ if(obj_Player.Holding == 0)
         if(temp2 != 0)
         {
             scr_CreateObjectByIndex(mouse_x,mouse_y,temp2);
-            ds_list_delete((ParentIndex).ListIndex,temp1);
+            ds_list_delete((ParentIndex).ListIndex,temp2);
         }
     }
 
@@ -292,8 +269,5 @@ else if(Index == 3) //"Draw bottom card"
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>0,0</point>
-    <point>16,16</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>

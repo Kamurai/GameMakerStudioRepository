@@ -86,20 +86,16 @@ if(Index == -1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//define variables
-Lastx = x;
+            <string>Lastx = x;
 Lasty = y;
-LastDepth = depth;
+
 temp_x = 0;
 temp_y = 0;
+
 SubMenuIndex = 0;
 Limit = 4;
+
 Pressed = 0;
-image_index = 0; //obj_Color.Index;
-image_speed = 0;
-Selected = false;
-Hold = (-1);
-FromServer = 0;
 ListIndex = ds_list_create();
 </string>
           </argument>

@@ -12,10 +12,7 @@ writeshort(image_index); //color
 
 writeshort(Hold); //Player Index
 
-writedouble(CurrentAlpha);
-writedouble(CurrentImageAngle);
-
-sendmessage(obj_Connection.socket, obj_Connection.HostIP, obj_Connection.HostPort); //send to server
+sendmessage(obj_Connection.socket, obj_Connection.client_ip, obj_Connection.client_port); //send to server
 
 
 //If translated Lastx versus translated x or if translated Lasty versus translated y

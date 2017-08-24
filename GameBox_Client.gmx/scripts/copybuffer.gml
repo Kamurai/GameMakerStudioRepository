@@ -4,4 +4,4 @@ Argument0 = destination buffer;
 Argument1 = Source buffer
 note: 0 is default buffer
 */
-return external_call(global._BufAC, argument[0], argument[1]);
+return external_call(global._BufAC, argument0, argument1);

@@ -40,30 +40,19 @@ if(size > 0)
                 tempX=readshort();   //x location
                 tempY=readshort();   //y location
                 tempZ=readshort();   //depth
-                
                 tempColor=readshort();  //read color
                 tempHold=readshort();   //read hold
-                
-                CurrentAlpha=readdouble();  //read alpha angle
-                CurrentImageAngle=readdouble(); //read rotation
-                
+                 
                 scr_CreateObjectByIndex(tempX,tempY,obj_Controller.ObjectRoster[temp]);
                 
                 with(master_Game)
                 {
                     if(Index == other.temp)
                     {
-                        FromServer = 1;
                         image_index = other.tempColor;    //set color
                         Hold=other.tempHold;              //set hold
-                        depth=other.tempZ;                //set depth
-                        
-                        AbsoluteX = other.tempX;
-                        AbsoluteY = other.tempY;
-                        CurrentAlpha = other.CurrentAlpha;  //set alpha angle
-                        CurrentImageAngle = other.CurrentImageAngle;    //set rotation
-                    
-                        scr_EncodeAlpha(); //this should be oriented at 0 degrees room rotation
+                        FromServer = 1;
+                        depth=other.tempZ;                   //set depth
                     }
                 }
                 
@@ -130,8 +119,8 @@ if(size > 0)
                     AbsoluteY=readshort();     //y location
                     depth=readshort(); //depth
                     LastDepth=depth;
-                    CurrentAlpha=readdouble();
-                    CurrentImageAngle=readdouble();
+                    CurrentAlpha=readshort();
+                    CurrentImageAngle=readshort();
                     
                     scr_EncodeAlpha();
                 }
@@ -244,9 +233,6 @@ if(size > 0)
                             
             tempHold=readshort();   //read hold
             
-            CurrentAlpha=readdouble();  //read alpha angle
-            CurrentImageAngle=readdouble(); //read rotation
-            
             scr_CreateObjectByIndex(tempX,tempY,obj_Controller.ObjectRoster[tempKey]);
             
             with(master_Game)
@@ -257,13 +243,6 @@ if(size > 0)
                     image_index = other.tempColor;      //set color
                     Hold=other.tempHold;                //set hold
                     depth=other.tempZ;                  //set depth
-                    
-                    AbsoluteX = other.tempX;
-                    AbsoluteY = other.tempY;
-                    CurrentAlpha = other.CurrentAlpha;  //set alpha angle
-                    CurrentImageAngle = other.CurrentImageAngle;    //set rotation
-                    
-                    scr_EncodeAlpha();
                 }
             }
                 
@@ -295,7 +274,6 @@ if(size > 0)
         default:
             game_end();    
     }  
-    
 }
 else 
 { 

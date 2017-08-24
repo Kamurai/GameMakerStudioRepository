@@ -38,7 +38,7 @@ global._BufAD = external_define(global._39dll, "copybuffer2", dll_cdecl, ty_real
 global._BufAE = external_define(global._39dll, "bytesleft", dll_cdecl, ty_real, 1, ty_real);
 global._BufAF = external_define(global._39dll, "bufferexists", dll_cdecl, ty_real, 1, ty_real);
 global._BufAG = external_define(global._39dll, "readsep", dll_cdecl, ty_string, 2, ty_string, ty_real);
-if(argument[1])
+if(argument1)
 {
 //Sockets
 global._SokA = external_define(global._39dll, "tcpconnect", dll_cdecl, ty_real, 3, ty_string, ty_real, ty_real);
@@ -65,7 +65,7 @@ global._SokU = external_define(global._39dll, "tcpconnected", dll_cdecl, ty_real
 global._SokX = external_define(global._39dll, "getsocketid", dll_cdecl, ty_real, 1, ty_real);
 global._SokY = external_define(global._39dll, "lastinPort", dll_cdecl, ty_real, 0);
 }
-if(argument[2])
+if(argument2)
 {
 //File functions
 global._FilA = external_define(global._39dll, "fileopen", dll_cdecl, ty_real, 2, ty_string, ty_real);

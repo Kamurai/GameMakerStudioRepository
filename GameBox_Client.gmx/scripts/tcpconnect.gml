@@ -7,4 +7,4 @@
   the game while it is connecting. Use tcpconnected() to find out when it has
   connected
 */
-return external_call(global._SokA, argument[0], argument[1], argument[2]);
+return external_call(global._SokA, argument0, argument1, argument2);

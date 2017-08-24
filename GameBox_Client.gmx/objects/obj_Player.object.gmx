@@ -25,33 +25,6 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Name="";
-Index = 0;
-Holding = 0;
-
-
-
-alarm[0] = 10;
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>image_speed = 0;
 </string>
           </argument>
@@ -73,10 +46,13 @@ alarm[0] = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Adjust = false;
-AdjustText = false;
+            <string>Name="";
+Index = 0;
+Holding = 0;
 
 
+
+alarm[0] = 10;
 </string>
           </argument>
         </arguments>
@@ -101,7 +77,7 @@ AdjustText = false;
             <kind>1</kind>
             <string>clearbuffer();
 writebyte(leave);
-sendmessage(obj_Connection.socket); //send name to server
+sendmessage(obj_Connection.socket, obj_Connection.HostIP, obj_Connection.HostPort); //send name to server
 </string>
           </argument>
         </arguments>
@@ -130,7 +106,7 @@ Name=get_string("Write your player name tag:",obj_Connection.LastName);
 
 obj_Controller.Roster[0] = Name;
 
-obj_Connection.HostIP = get_string("Enter the IP of the game host:",obj_Connection.LastHost);
+obj_Connection.hostIP=get_string("Enter the IP of the game host:",obj_Connection.LastHost);
 
 obj_Connection.HostPort = get_integer("Enter the desired port number:",obj_Connection.LastPort);
 
@@ -145,7 +121,7 @@ if(scr_client_connect(obj_Connection.HostIP, obj_Connection.HostPort))
     sendmessage(obj_Connection.socket, obj_Connection.HostIP, obj_Connection.HostPort); //send name to server
     //obj_chat.lines=0;
     scr_chat_write("System: Connected.",c_teal);
-    obj_Controller.connectedClients+=1;
+    obj_Controller.connectedClients=+1;
     
     scr_SaveMemories(Name,obj_Connection.HostIP,obj_Connection.HostPort);
     
@@ -155,7 +131,7 @@ else
     game_end();
     //failed to connect
     obj_Controller.isConnected=0;
-    obj_Connection.HostIP="";
+    obj_Connection.hostIP="";
     scr_chat_write("System: No host.",c_teal);
 }
 </string>

@@ -58,7 +58,7 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>x = obj_ChatView.x;
-y = obj_ChatView.sprite_height + obj_ChatInput.sprite_height + 8;//16;
+y = obj_ChatView.y + obj_ChatView.sprite_height + obj_ChatInput.sprite_height + 8;//16;
 </string>
           </argument>
         </arguments>

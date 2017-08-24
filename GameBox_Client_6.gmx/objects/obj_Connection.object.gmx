@@ -25,17 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hostIP="";
-socket="";
-
-HostReference = "Reference.txt";
-
-LastName = "";
-LastHost = "127.0.0.1";
-
-obj_Connection.client_ip = "127.0.0.1";
-obj_Connection.client_port = 25563;
-obj_Connection.socket = -1;
+            <string>image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -56,7 +46,17 @@ obj_Connection.socket = -1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0;
+            <string>socket="";
+
+HostReference = "Reference.txt";
+
+LastName = "";
+LastHost = "127.0.0.1";
+LastPort = 25563
+
+HostIP = "127.0.0.1"
+HostPort = 25563;
+socket = -1;
 </string>
           </argument>
         </arguments>

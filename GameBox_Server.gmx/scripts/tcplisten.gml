@@ -5,6 +5,8 @@
   Argument1 = Max amount of people allowed to be in the connected but not
   accepted list
   Argument2 = Blocking(0)/Non-Blocking(1) mode. Affects the tcpaccept script.
+  
   returns the id of the socket or a negative error code.
 */
+//return external_call(global._SokB, argument0, argument1, argument2);
 return external_call(global._SokB, argument[0], argument[1], argument[2]);

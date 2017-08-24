@@ -13,4 +13,6 @@ writeshort(image_index); //color
 writeshort(Hold); //Player Index
 
 sendmessage(obj_Connection.socket, obj_Connection.client_ip, obj_Connection.client_port); //send to server
-       
+
+
+//If translated Lastx versus translated x or if translated Lasty versus translated y

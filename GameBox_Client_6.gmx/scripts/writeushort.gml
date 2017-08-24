@@ -5,6 +5,4 @@ Argument0 : value
 [Argument1]: The buffer id to write too. Leave out this argument or set
 it to 0 to use the default buffer.
 */
-//return external_call(global._BufY, argument0, argument1);
-//eturn external_call(global._BufY, argument[0], argument[1]);
-return external_call(global._BufY, argument0, 0);//argument1);
+return external_call(global._BufY, argument0, 0); //argument[1]);

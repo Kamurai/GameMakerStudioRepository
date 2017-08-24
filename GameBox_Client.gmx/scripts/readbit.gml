@@ -4,4 +4,4 @@
   argument1 = bit position (0-7)
   returns the bit value (true/false)
 */
-return (argument[0] & power(2, argument[1]))>0;
+return (argument0 & power(2, argument1))>0;

@@ -16,4 +16,4 @@ MAKE SURE THE CORRECT FORMAT MODE IS SET WHEN RECIEVING A MESSAGE THAT IS IN A
 SPECIFIC FORMAT.
 returns argument0
 */
-return external_call(global._SokG, argument[0], argument[1], argument[2]);
+return external_call(global._SokG, argument0, argument1, argument2);

@@ -77,7 +77,7 @@ alarm[0] = 10;
             <kind>1</kind>
             <string>clearbuffer();
 writebyte(leave);
-sendmessage(obj_Connection.socket, obj_Connection.client_ip, obj_Connection.client_port); //send name to server
+sendmessage(obj_Connection.socket, obj_Connection.HostIP, obj_Connection.HostPort); //send name to server
 </string>
           </argument>
         </arguments>
@@ -108,7 +108,9 @@ obj_Controller.Roster[0] = Name;
 
 obj_Connection.hostIP=get_string("Enter the IP of the game host:",obj_Connection.LastHost);
 
-if(scr_client_connect(obj_Connection.hostIP)) 
+obj_Connection.HostPort = get_integer("Enter the desired port number:",obj_Connection.LastPort);
+
+if(scr_client_connect(obj_Connection.HostIP, obj_Connection.HostPort)) 
 { 
     //connected
     obj_Controller.isConnected=1;
@@ -116,12 +118,12 @@ if(scr_client_connect(obj_Connection.hostIP))
     clearbuffer();
     writebyte(setname); 
     writestring(Name);
-    sendmessage(obj_Connection.socket, obj_Connection.client_ip, obj_Connection.client_port); //send name to server
+    sendmessage(obj_Connection.socket, obj_Connection.HostIP, obj_Connection.HostPort); //send name to server
     //obj_chat.lines=0;
     scr_chat_write("System: Connected.",c_teal);
     obj_Controller.connectedClients=+1;
     
-    scr_SaveMemories(obj_Connection.hostIP,Name);
+    scr_SaveMemories(Name,obj_Connection.HostIP,obj_Connection.HostPort);
     
 }
 else 

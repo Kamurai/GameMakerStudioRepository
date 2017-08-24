@@ -6,4 +6,5 @@ Useful when banning hackers who have a dynamic ip.
 Argument0 = Ip
 Argument1 = Masked ip.
 */
+//return external_call(global._SokO, argument1, argument0);
 return external_call(global._SokO, argument[1], argument[0]);

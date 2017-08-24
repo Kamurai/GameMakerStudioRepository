@@ -5,4 +5,5 @@
   argument0 = ip address
   returns: number
 */
+//return external_call(global._UtilE, argument0);
 return external_call(global._UtilE, argument[0]);

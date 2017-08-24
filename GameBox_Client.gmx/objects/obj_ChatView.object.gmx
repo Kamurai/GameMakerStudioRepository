@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_Communitive</parentName>
+  <parentName>master_Interface</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -55,51 +55,6 @@ lines=0;//1;
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>Adjust = true;
-AdjustText = true;
-AdjustTextRateX = .0005;
-AdjustTextRateY = .00155;
-
-ChatViewWidth = 256;
-ChatViewHeight = 424;
-
-x = view_xview[0] + view_wview[0] - ChatViewWidth; //Align to right of view
-y = view_yview[0] - 0; //Align to top of view
-
-DynXRatio = (x - view_xview[0]) / view_wview[0];
-x = view_xview[0] + DynXRatio * view_wview[0];
-
-DynYRatio = (y - view_yview[0]) / view_hview[0];;
-y = view_yview[0] + DynYRatio * view_hview[0];
-
-DynWidthRatio = ChatViewWidth / view_wview[0];
-DynWidth = DynWidthRatio * view_wview[0]; //===ChatViewWidth
-
-DynHeightRatio = ChatViewHeight / view_hview[0];
-DynHeight = DynHeightRatio * view_hview[0]; //===ChatViewHeight
-
-DynScaleX = 1;
-DynScaleY = 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -118,11 +73,8 @@ DynScaleY = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//x = view_xview[0] + 8*3 + view_wview - sprite_width - 8*4;
-//y = view_yview[0] + 8;
-
-x = view_xview[0] + DynXRatio * view_wview[0];
-y = view_yview[0] + DynYRatio * view_hview[0];
+            <string>x = view_xview[0] + 8*3 + view_wview - sprite_width - 8*4;
+y = view_yview[0] + 8;
 </string>
           </argument>
         </arguments>
@@ -147,16 +99,12 @@ y = view_yview[0] + DynYRatio * view_hview[0];
             <kind>1</kind>
             <string>draw_set_font(font2);
 
-//draw_sprite(sprite_index,0,x,y);
-draw_sprite_stretched(spr_ChatView, 0, x, y, DynWidth, DynHeight);
-
-//draw_text(x+2,y+2,"Chat");
-draw_text_transformed(x+2,y+2,"Chat",DynScaleX,DynScaleY,0);
+draw_sprite(sprite_index,0,x,y);
+draw_text(x+2,y+2,"Chat");
 for(i=0;i&lt;lines;i+=1) 
 {
     draw_set_color(color[i]);
-    //draw_text(x+5,y+20+14*i,line[i]);
-    draw_text_transformed(x+5,y+20+14*i,line[i],DynScaleX,DynScaleY,0);
+    draw_text(x+5,y+20+14*i,line[i]);
     draw_set_color(c_black);
 }
 </string>

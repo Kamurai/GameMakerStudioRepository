@@ -12,4 +12,4 @@ If you dont want to save the data to the defualt buffer, than do it like this:
 peekmessage(sockid, 0, bufferid);
 or peekmessage(sockid, bytestoreceive, bufferid);
 */
-return external_call(global._SokS, argument[0], argument[1], 0); //argument[2]);
+return external_call(global._SokS, argument0, argument1, 0); //argument[2]);

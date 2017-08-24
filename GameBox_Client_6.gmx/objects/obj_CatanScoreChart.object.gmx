@@ -292,7 +292,7 @@ Victory_Increment_Right_Bound = Victory_Increment_Left_Bound + 31;
             <string>if(y &gt; obj_Controller.bound_y || x &gt; obj_Controller.bound_x)
 {
     obj_Player.Holding = 0;
-    //instance_destroy();
+    instance_destroy();
 }
 </string>
           </argument>
@@ -826,5 +826,8 @@ draw_rectangle_color(Gold_Title_Left_Bound, Gold_Title_Upper_Bound, Gold_Title_R
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>128,32</point>
+    <point>128,128</point>
+  </PhysicsShapePoints>
 </object>

@@ -2,19 +2,20 @@ var size;
 
 //receive packet/message from server
 size = receivemessage(obj_Connection.socket);
+monkey = size;
 if(size < 0) 
     exit; //no packet received
 if(size > 0) 
-{ 
+{
+ 
     //packet received, process it
     switch(readbyte()) 
-    {
-            
+    { 
         case chat:
             var tempChat = readstring();
             scr_chat_write(tempChat,readint());
             break;
-            
+          
         case setindex:
             obj_Player.Index = readshort();
             break;
@@ -48,8 +49,9 @@ if(size > 0)
                 {
                     if(Index == other.temp)
                     {
-                        image_index = other.tempColor;    //read color
-                        Hold=other.tempHold;              //read hold
+                        image_index = other.tempColor;    //set color
+                        Hold=other.tempHold;              //set hold
+                        FromServer = 1;
                         depth=other.tempZ;                   //set depth
                     }
                 }
@@ -81,7 +83,6 @@ if(size > 0)
                         Building = other.tempBuilding;
                     }
                 }
-                
             }
             obj_Controller.Startup = 0;
             break;
@@ -95,8 +96,8 @@ if(size > 0)
             {
                 if(other.temp == Index)
                 {
-                    x=readshort();   //x location
-                    y=readshort();   //y location
+                    x=readshort();     //x location
+                    y=readshort();     //y location
                     depth=readshort(); //depth
                     Lastx=x;
                     Lasty=y;
@@ -104,22 +105,7 @@ if(size > 0)
                 }
             }        
             break;
-        
-        case updateobjectcolor:
-        //var temp,tempColor;
-        
-            temp=readbyte(); //object roster key
-            tempColor=readshort(); //Color (image index)
             
-            with(master_Game)
-            {
-                if(Index == other.temp)
-                {
-                    image_index = other.tempColor;    //read color
-                }
-            }
-            break;
-        
         case updateobjectrotation: //this is intended to update an existing object with rotation in mind
         //var temp;
         
@@ -151,6 +137,21 @@ if(size > 0)
                 {
                     depth=readshort(); //depth
                     LastDepth=depth;
+                }
+            }
+            break;
+        
+        case updateobjectcolor:
+        //var temp,tempColor;
+        
+            temp=readbyte(); //object roster key
+            tempColor=readshort(); //Color (image index)
+            
+            with(master_Game)
+            {
+                if(Index == other.temp)
+                {
+                    image_index = other.tempColor;    //read color
                 }
             }
             break;
@@ -199,9 +200,9 @@ if(size > 0)
             break;
             
         case updatecatanchartscores:
-        //var temp,tempVictory,tempGold,tempTrade,tempPolitics,tempBuilding;
+        //var temp,tempGold,tempTrade,tempPolitics,tempBuilding;
             temp=readbyte();        //read object roster key
-            //tempVictory=readshort();   //read Victory
+            
             tempGold=readshort();   //read Gold
             tempTrade=readshort();   //read Trade
             tempPolitics=readshort();   //read Politics
@@ -211,12 +212,10 @@ if(size > 0)
             {
                 if(other.temp == Index)
                 {
-                    //Victory = other.tempVictory;
                     Gold = other.tempGold;
                     Trade = other.tempTrade;
                     Politics = other.tempPolitics;
                     Building = other.tempBuilding;
-                    
                 }
             }
             break;
@@ -231,7 +230,7 @@ if(size > 0)
             tempY=readshort();   //y location
             tempZ=readshort();   //depth
             tempColor=readshort();  //read color
-            
+                            
             tempHold=readshort();   //read hold
             
             scr_CreateObjectByIndex(tempX,tempY,obj_Controller.ObjectRoster[tempKey]);
@@ -241,8 +240,8 @@ if(size > 0)
                 if(Index == other.tempKey)
                 {
                     FromServer = 1;
-                    image_index = other.tempColor;      //read color
-                    Hold=other.tempHold;                //read hold
+                    image_index = other.tempColor;      //set color
+                    Hold=other.tempHold;                //set hold
                     depth=other.tempZ;                  //set depth
                 }
             }

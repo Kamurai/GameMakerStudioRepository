@@ -88,21 +88,16 @@ if(Index == -1)
             <kind>1</kind>
             <string>Lastx = x;
 Lasty = y;
-LastDepth = depth;
+
 temp_x = 0;
 temp_y = 0;
+
 SubMenuIndex = 0;
 Limit = 4;
+
 Pressed = 0;
 ListIndex = ds_list_create();
 ValueListIndex = ds_list_create();
-image_index = 0; //obj_Color.Index;
-image_speed = 0;
-Selected = false;
-Hold = (-1);
-FromServer = 0;
-
-alarm[0] = 1;
 </string>
           </argument>
         </arguments>
@@ -123,7 +118,14 @@ alarm[0] = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_DefineForRotation();
+            <string>alarm[0] = 1;
+
+image_index = 0; //obj_Color.Index;
+image_speed = 0;
+Selected = false;
+Hold = (-1);
+
+FromServer = 0;
 </string>
           </argument>
         </arguments>

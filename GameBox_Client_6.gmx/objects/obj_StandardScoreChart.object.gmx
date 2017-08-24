@@ -142,6 +142,8 @@ Decrement_Upper_Bound = Title_Upper_Bound + 83;
 Decrement_Lower_Bound = y + (sprite_height/2)-1;
 Decrement_Left_Bound  = x - (sprite_width/2);
 Decrement_Right_Bound = x-1;
+
+
 </string>
           </argument>
         </arguments>
@@ -213,7 +215,7 @@ Decrement_Right_Bound = x-1;
             <string>if(y &gt; obj_Controller.bound_y || x &gt; obj_Controller.bound_x)
 {
     obj_Player.Holding = 0;
-    //instance_destroy();
+    instance_destroy();
 }
 </string>
           </argument>
@@ -536,5 +538,8 @@ draw_rectangle_color(Decrement_Left_Bound, Decrement_Upper_Bound, Decrement_Righ
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>32,48</point>
+    <point>48,48</point>
+  </PhysicsShapePoints>
 </object>

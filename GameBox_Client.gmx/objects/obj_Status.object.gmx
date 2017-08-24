@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_Communitive</parentName>
+  <parentName>master_Interface</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -51,52 +51,6 @@
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>Adjust = true;
-AdjustText = true;
-AdjustTextRateX = .0005;
-AdjustTextRateY = .00155;
-
-
-StatusWidth = 136;
-StatusHeight = 16;
-
-x = view_xview[0] + view_wview[0] - StatusWidth; //Align to right of view
-y = view_yview[0] + view_hview[0] - StatusHeight; //Align to bottom of view
-
-DynXRatio = (x - view_xview[0]) / view_wview[0];
-x = view_xview[0] + DynXRatio * view_wview[0];
-
-DynYRatio = (y - view_yview[0]) / view_hview[0];;
-y = view_yview[0] + DynYRatio * view_hview[0];
-
-DynWidthRatio = StatusWidth / view_wview[0];
-DynWidth = DynWidthRatio * view_wview[0]; //===StatusWidth
-
-DynHeightRatio = StatusHeight / view_hview[0];
-DynHeight = DynHeightRatio * view_hview[0]; //===StatusHeight
-
-DynScaleX = 1;
-DynScaleY = 1;
-</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -115,11 +69,8 @@ DynScaleY = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//x = obj_PlayerList.x;
-//y = obj_PlayerList.y + obj_PlayerList.sprite_height;
-
-x = view_xview[0] + DynXRatio * view_wview[0];
-y = view_yview[0] + DynYRatio * view_hview[0];
+            <string>x = obj_PlayerList.x;
+y = obj_PlayerList.y + obj_PlayerList.sprite_height;
 </string>
           </argument>
         </arguments>
@@ -144,23 +95,17 @@ y = view_yview[0] + DynYRatio * view_hview[0];
             <kind>1</kind>
             <string>draw_set_font(font2);
 
-//draw_sprite(sprite_index,0,x,y);
-draw_sprite_stretched(spr_Status, 0, x, y, DynWidth, DynHeight);
-
+draw_sprite(sprite_index,0,x,y);
 if(obj_Controller.isConnected == 1)
 {
-    //draw_text(x+2,y+2,"Status: Connected");
-    draw_text_transformed(x+2,y+2,"Status: Connected",DynScaleX,DynScaleY,0);
+    draw_text(x+2,y+2,"Status: Connected");
 }
 else if(obj_Controller.isConnected == 0)
 {
-    //draw_text(x+2,y+2,"Status: Not Connected");
-    draw_text_transformed(x+2,y+2,"Status: Not Connected",DynScaleX,DynScaleY,0);
+    draw_text(x+2,y+2,"Status: Not Connected");
 }
 //draw_set_color(c_gray);
-//draw_text(x+116,y+2,obj_Controller.connectedClients);
-draw_text_transformed(x+116,y+2,obj_Controller.connectedClients,DynScaleX,DynScaleY,0);
-
+draw_text(x+116,y+2,obj_Controller.connectedClients);
 </string>
           </argument>
         </arguments>
@@ -178,8 +123,5 @@ draw_text_transformed(x+116,y+2,obj_Controller.connectedClients,DynScaleX,DynSca
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>0,0</point>
-    <point>64,64</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>

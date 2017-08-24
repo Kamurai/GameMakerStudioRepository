@@ -6,12 +6,9 @@ Argument0 = Socket to recieve from.
 mode if used.
 [Argument2]: The buffer id to receive to. Leave out this argument or set
 it to 0 to use the default buffer.
-
 returns the amount of bytes recieved
 NOTE:
 If you dont want to save the data to the defualt buffer, than do it like this:
 receivemessage(sockid, 0, bufferid);
 */
-//return external_call(global._SokE, argument0, argument1, argument2);
-return external_call(global._SokE, argument[0], 0, 0);//argument[1], argument[2]);
-//return external_call(global._SokE, argument0, 0, 0);//argument2);
+return external_call(global._SokE, argument[0], 0, 0); // argument[0], argument[1],argument[2]);

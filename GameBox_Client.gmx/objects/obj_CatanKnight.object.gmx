@@ -25,7 +25,125 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_CreateAnyPiece();
+            <string>scr_SetMasterIndex();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>obj_Controller.ObjectCount += 1;
+Index = -1;
+
+//walk through ObjectRoster
+for(i=0;i&lt;(obj_Controller.ObjectCount-1);i+=1)
+{
+    if(obj_Controller.ObjectRoster[i] == -1)
+    {
+        Index = i;
+        obj_Controller.ObjectRoster[i] = MasterIndex;
+    }
+}
+if(Index == -1)
+{
+    Index = obj_Controller.ObjectCount-1;
+    obj_Controller.ObjectRoster[Index] = MasterIndex;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Lastx = x;
+Lasty = y;
+LastDepth = depth;
+
+temp_x = 0;
+temp_y = 0;
+
+alarm[0] = 1;
+
+image_index = obj_Color.Index;
+image_speed = 0;
+Selected = false;
+Hold = (-1);
+
+if(obj_Controller.FromServer == 1)
+{
+    FromServer = 1;
+}
+else
+{
+    FromServer = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*
+if(obj_Controller.Startup == 0)
+{
+    if(obj_Controller.FromServer == 0)
+    {
+        x = mouse_x;
+        y = mouse_y;
+        Selected = 1;
+        obj_Player.Holding = 1;
+        Hold = obj_Player.Index;
+        //update server with creating an object
+        scr_SendMakeObject();
+    }
+    else if(obj_Controller.FromServer == 1)
+    {
+        obj_Controller.FromServer = 0;
+    }
+}
+*/
 </string>
           </argument>
         </arguments>

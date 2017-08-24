@@ -252,7 +252,6 @@
     <option_psvita_build_version>0</option_psvita_build_version>
     <option_psvita_fronttouch>false</option_psvita_fronttouch>
     <option_psvita_interpolate>true</option_psvita_interpolate>
-    <option_psvita_interpolation>true</option_psvita_interpolation>
     <option_psvita_major_version>1</option_psvita_major_version>
     <option_psvita_minor_version>0</option_psvita_minor_version>
     <option_psvita_nptitleid></option_psvita_nptitleid>
@@ -273,7 +272,7 @@
     <option_sci_serverLocation></option_sci_serverLocation>
     <option_screenkey>True</option_screenkey>
     <option_screenshotkey>true</option_screenshotkey>
-    <option_shortcircuit>True</option_shortcircuit>
+    <option_shortcircuit>true</option_shortcircuit>
     <option_showcursor>True</option_showcursor>
     <option_showprogress>1</option_showprogress>
     <option_sizeable>False</option_sizeable>
@@ -308,7 +307,7 @@
     <option_use_new_audio>False</option_use_new_audio>
     <option_variableerrors>False</option_variableerrors>
     <option_version>100</option_version>
-    <option_version_build>8</option_version_build>
+    <option_version_build>7</option_version_build>
     <option_version_company></option_version_company>
     <option_version_copyright></option_version_copyright>
     <option_version_description></option_version_description>
@@ -352,7 +351,7 @@
     <option_win8_texture_page>1024</option_win8_texture_page>
     <option_win8_wide_logo>Configs\Default\Windows8\logos\logo310.png</option_win8_wide_logo>
     <option_windowcolor>clBlack</option_windowcolor>
-    <option_windows_build_version>8</option_windows_build_version>
+    <option_windows_build_version>6</option_windows_build_version>
     <option_windows_company_info></option_windows_company_info>
     <option_windows_copyright_info></option_windows_copyright_info>
     <option_windows_description_info></option_windows_description_info>
@@ -448,5 +447,34 @@
     <option_xbone_texture_page>1024</option_xbone_texture_page>
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
-  <ConfigConstants/>
+  <ConfigConstants>
+    <constants number="26">
+      <constant name="updateobjectrotation">25</constant>
+      <constant name="updateobjectdepth">24</constant>
+      <constant name="updatecatanchartscores">23</constant>
+      <constant name="updatechartscore">22</constant>
+      <constant name="updatecharttitle">21</constant>
+      <constant name="updateobjecthold">20</constant>
+      <constant name="updateobjectcolor">19</constant>
+      <constant name="updateobject">18</constant>
+      <constant name="removeobject">17</constant>
+      <constant name="makeobject">16</constant>
+      <constant name="getobjects">15</constant>
+      <constant name="setindex">14</constant>
+      <constant name="gametype">13</constant>
+      <constant name="serverstop">12</constant>
+      <constant name="replay">11</constant>
+      <constant name="speccreate">10</constant>
+      <constant name="specmovement">9</constant>
+      <constant name="setname">8</constant>
+      <constant name="setspectator">7</constant>
+      <constant name="setopponent">6</constant>
+      <constant name="leave">5</constant>
+      <constant name="setplayerstate">4</constant>
+      <constant name="chat">3</constant>
+      <constant name="movement">2</constant>
+      <constant name="setturn">1</constant>
+      <constant name="getplayers">0</constant>
+    </constants>
+  </ConfigConstants>
 </Config>

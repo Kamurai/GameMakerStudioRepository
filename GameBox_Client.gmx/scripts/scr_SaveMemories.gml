@@ -1,4 +1,4 @@
-var targetHost,targetName,targetPort;
+var targetHost,targetName;
     targetName = argument0;
     targetHost = argument1;
     targetPort = argument2;

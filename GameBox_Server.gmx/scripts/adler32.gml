@@ -5,4 +5,5 @@
   returns a number not a string. Uses adler-32 checksum algorithm.
   The value can be sent as an unsigned int
 */
+//return external_call(global._UtilC, argument0);
 return external_call(global._UtilC, argument[0]);

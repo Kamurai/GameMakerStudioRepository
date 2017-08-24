@@ -4,12 +4,9 @@ Argument0: The dll filename. Set this argument to 0 if you want to use "39dll.dl
 Argument1: Set to true to load socket functions
 Argument2: Set to true to load utilities.
 */
-/*
-global._39dll = argument[0];
-if(is_real(argument[0]))global._39dll= "39dll.dll";
-external_call(external_define(global._39dll, "dllInit", dll_cdecl, ty_real, 0));
-*/
 
+//global._39dll=0;
+//if is_real(0) then 
 global._39dll="39dll.dll";
 
 dllfree();
@@ -44,49 +41,51 @@ global._BufAD = external_define(global._39dll, "copybuffer2", dll_cdecl, ty_real
 global._BufAE = external_define(global._39dll, "bytesleft", dll_cdecl, ty_real, 1, ty_real);
 global._BufAF = external_define(global._39dll, "bufferexists", dll_cdecl, ty_real, 1, ty_real);
 global._BufAG = external_define(global._39dll, "readsep", dll_cdecl, ty_string, 2, ty_string, ty_real);
-
 if(argument0)
 {
-    //Sockets
-    global._SokA = external_define(global._39dll, "tcpconnect", dll_cdecl, ty_real, 3, ty_string, ty_real, ty_real);
-    global._SokB = external_define(global._39dll, "tcplisten", dll_cdecl, ty_real, 3, ty_real, ty_real, ty_real);
-    global._SokC = external_define(global._39dll, "tcpaccept", dll_cdecl, ty_real, 2, ty_real, ty_real);
-    global._SokD = external_define(global._39dll, "sendmessage", dll_cdecl, ty_real, 4, ty_real, ty_string, ty_real, ty_real);
-    global._SokE = external_define(global._39dll, "receivemessage", dll_cdecl, ty_real, 3, ty_real, ty_real, ty_real);
-    global._SokF = external_define(global._39dll, "setsync", dll_cdecl, ty_real, 2, ty_real, ty_real);
-    global._SokG = external_define(global._39dll, "setformat", dll_cdecl, ty_real, 3, ty_real, ty_real, ty_string);
-    global._SokH = external_define(global._39dll, "udpconnect", dll_cdecl, ty_real, 2, ty_real, ty_real);
-    global._SokI = external_define(global._39dll, "hostip", dll_cdecl, ty_string, 1, ty_string);
-    global._SokJ = external_define(global._39dll, "lastinIP", dll_cdecl, ty_string, 0);
-    global._SokK = external_define(global._39dll, "closesock", dll_cdecl, ty_real, 1, ty_real);
-    global._SokL = external_define(global._39dll, "tcpip", dll_cdecl, ty_string, 1, ty_real);
-    global._SokM = external_define(global._39dll, "socklasterror", dll_cdecl, ty_real, 0);
-    global._SokN = external_define(global._39dll, "myhost", dll_cdecl, ty_string, 0);
-    global._SokO = external_define(global._39dll, "compareip", dll_cdecl, ty_real, 2, ty_string, ty_string);
-    global._SokP = external_define(global._39dll, "sockexit", dll_cdecl, ty_real, 0);
-    global._SokQ = external_define(global._39dll, "sockstart", dll_cdecl, ty_real, 0);
-    global._SokR = external_define(global._39dll, "getmacaddress", dll_cdecl, ty_string, 0);
-    global._SokS = external_define(global._39dll, "peekmessage", dll_cdecl, ty_real, 3, ty_real, ty_real, ty_real);
-    global._SokT = external_define(global._39dll, "setnagle", dll_cdecl, ty_real, 2, ty_real, ty_real);
-    global._SokU = external_define(global._39dll, "tcpconnected", dll_cdecl, ty_real, 1, ty_real);
-    global._SokX = external_define(global._39dll, "getsocketid", dll_cdecl, ty_real, 1, ty_real);
-    global._SokY = external_define(global._39dll, "lastinPort", dll_cdecl, ty_real, 0);
+//Sockets
+global._SokA = external_define(global._39dll, "tcpconnect", dll_cdecl, ty_real, 3, ty_string, ty_real, ty_real);
+global._SokB = external_define(global._39dll, "tcplisten", dll_cdecl, ty_real, 3, ty_real, ty_real, ty_real);
+global._SokC = external_define(global._39dll, "tcpaccept", dll_cdecl, ty_real, 2, ty_real, ty_real);
+global._SokD = external_define(global._39dll, "sendmessage", dll_cdecl, ty_real, 4, ty_real, ty_string, ty_real, ty_real);
+global._SokE = external_define(global._39dll, "receivemessage", dll_cdecl, ty_real, 3, ty_real, ty_real, ty_real);
+global._SokF = external_define(global._39dll, "setsync", dll_cdecl, ty_real, 2, ty_real, ty_real);
+global._SokG = external_define(global._39dll, "setformat", dll_cdecl, ty_real, 3, ty_real, ty_real, ty_string);
+global._SokH = external_define(global._39dll, "udpconnect", dll_cdecl, ty_real, 2, ty_real, ty_real);
+global._SokI = external_define(global._39dll, "hostip", dll_cdecl, ty_string, 1, ty_string);
+global._SokJ = external_define(global._39dll, "lastinIP", dll_cdecl, ty_string, 0);
+global._SokK = external_define(global._39dll, "closesock", dll_cdecl, ty_real, 1, ty_real);
+global._SokL = external_define(global._39dll, "tcpip", dll_cdecl, ty_string, 1, ty_real);
+global._SokM = external_define(global._39dll, "socklasterror", dll_cdecl, ty_real, 0);
+global._SokN = external_define(global._39dll, "myhost", dll_cdecl, ty_string, 0);
+global._SokO = external_define(global._39dll, "compareip", dll_cdecl, ty_real, 2, ty_string, ty_string);
+global._SokP = external_define(global._39dll, "sockexit", dll_cdecl, ty_real, 0);
+global._SokQ = external_define(global._39dll, "sockstart", dll_cdecl, ty_real, 0);
+global._SokR = external_define(global._39dll, "getmacaddress", dll_cdecl, ty_string, 0);
+global._SokS = external_define(global._39dll, "peekmessage", dll_cdecl, ty_real, 3, ty_real, ty_real, ty_real);
+global._SokT = external_define(global._39dll, "setnagle", dll_cdecl, ty_real, 2, ty_real, ty_real);
+global._SokU = external_define(global._39dll, "tcpconnected", dll_cdecl, ty_real, 1, ty_real);
+global._SokX = external_define(global._39dll, "getsocketid", dll_cdecl, ty_real, 1, ty_real);
+global._SokY = external_define(global._39dll, "lastinPort", dll_cdecl, ty_real, 0);
 }
 if(argument1)
 {
-    //File functions
-    global._FilA = external_define(global._39dll, "fileopen", dll_cdecl, ty_real, 2, ty_string, ty_real);
-    global._FilB = external_define(global._39dll, "fileclose", dll_cdecl, ty_real, 1, ty_real);
-    global._FilC = external_define(global._39dll, "filewrite", dll_cdecl, ty_real, 2, ty_real, ty_real);
-    global._FilD = external_define(global._39dll, "fileread", dll_cdecl, ty_real, 3, ty_real, ty_real, ty_real);
-    global._FilE = external_define(global._39dll, "filepos", dll_cdecl, ty_real, 1, ty_real);
-    global._FilF = external_define(global._39dll, "filesetpos", dll_cdecl, ty_real, 2, ty_real, ty_real);
-    global._FilG = external_define(global._39dll, "filesize", dll_cdecl, ty_real, 1, ty_real);
-    global._UtilA = external_define(global._39dll, "md5string", dll_cdecl, ty_string, 1, ty_string);
-    global._UtilB = external_define(global._39dll, "md5buffer", dll_cdecl, ty_string, 1, ty_real);
-    global._UtilC = external_define(global._39dll, "adler32", dll_cdecl, ty_real, 1, ty_real);
-    global._UtilD = external_define(global._39dll, "bufferencrypt", dll_cdecl, ty_real, 2, ty_string, ty_real);
-    global._UtilE = external_define(global._39dll, "iptouint", dll_cdecl, ty_real, 1, ty_string);
-    global._UtilF = external_define(global._39dll, "uinttoip", dll_cdecl, ty_string, 1, ty_real);
-    global._UtilG = external_define(global._39dll, "netconnected", dll_cdecl, ty_real, 0);
+//File functions
+
+global._FilA = external_define(global._39dll, "fileopen", dll_cdecl, ty_real, 2, ty_string, ty_real);
+global._FilB = external_define(global._39dll, "fileclose", dll_cdecl, ty_real, 1, ty_real);
+global._FilC = external_define(global._39dll, "filewrite", dll_cdecl, ty_real, 2, ty_real, ty_real);
+global._FilD = external_define(global._39dll, "fileread", dll_cdecl, ty_real, 3, ty_real, ty_real, ty_real);
+global._FilE = external_define(global._39dll, "filepos", dll_cdecl, ty_real, 1, ty_real);
+global._FilF = external_define(global._39dll, "filesetpos", dll_cdecl, ty_real, 2, ty_real, ty_real);
+global._FilG = external_define(global._39dll, "filesize", dll_cdecl, ty_real, 1, ty_real);
+
+global._UtilA = external_define(global._39dll, "md5string", dll_cdecl, ty_string, 1, ty_string);
+global._UtilB = external_define(global._39dll, "md5buffer", dll_cdecl, ty_string, 1, ty_real);
+global._UtilC = external_define(global._39dll, "adler32", dll_cdecl, ty_real, 1, ty_real);
+global._UtilD = external_define(global._39dll, "bufferencrypt", dll_cdecl, ty_real, 2, ty_string, ty_real);
+global._UtilE = external_define(global._39dll, "iptouint", dll_cdecl, ty_real, 1, ty_string);
+global._UtilF = external_define(global._39dll, "uinttoip", dll_cdecl, ty_string, 1, ty_real);
+global._UtilG = external_define(global._39dll, "netconnected", dll_cdecl, ty_real, 0);
+
 }

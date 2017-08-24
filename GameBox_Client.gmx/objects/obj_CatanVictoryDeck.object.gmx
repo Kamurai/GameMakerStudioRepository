@@ -25,7 +25,106 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_CreateAnyContainer();
+            <string>scr_SetMasterIndex();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>obj_Controller.ObjectCount += 1;
+Index = -1;
+
+//walk through ObjectRoster
+for(i=0;i&lt;(obj_Controller.ObjectCount-1);i+=1)
+{
+    if(obj_Controller.ObjectRoster[i] == -1)
+    {
+        Index = i;
+        obj_Controller.ObjectRoster[i] = MasterIndex;
+    }
+}
+if(Index == -1)
+{
+    Index = obj_Controller.ObjectCount-1;
+    obj_Controller.ObjectRoster[Index] = MasterIndex;
+}
+
+
+//pivot: update server that there is a new object
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Lastx = x;
+Lasty = y;
+
+temp_x = 0;
+temp_y = 0;
+
+SubMenuIndex = 0;
+Limit = 4;
+
+Pressed = 0;
+ListIndex = ds_list_create();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[0] = 1;
+
+image_index = obj_Color.Index;
+image_speed = 0;
+Selected = false;
+Hold = (-1);
+
+FromServer =0;
 </string>
           </argument>
         </arguments>
@@ -72,8 +171,5 @@ for(x = 0; x &lt; Limit1; x+=1)
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints>
-    <point>16,16</point>
-    <point>16,16</point>
-  </PhysicsShapePoints>
+  <PhysicsShapePoints/>
 </object>
