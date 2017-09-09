@@ -1,0 +1,12 @@
+//argument0 represents positive or negative rotation
+
+image_angle = image_angle + obj_Controller.Rotation*argument0;
+
+if( image_angle >= 360)
+{
+    image_angle = image_angle - 360;
+}
+else if( image_angle < 0)
+{
+    image_angle = image_angle + 360;
+}

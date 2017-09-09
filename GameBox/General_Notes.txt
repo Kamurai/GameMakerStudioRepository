@@ -1,0 +1,13 @@
+																Update interface options to be flush with one another
+																Update room height to accomodate interface around the table
+																Ensure user can perform stationary rotation of an object.
+
+																Update port control for server connection:
+																	Client side
+																	Server side
+
+Seperate utility needs to allow user to save and load decks
+
+
+View Rotation
+Update card aesthetics

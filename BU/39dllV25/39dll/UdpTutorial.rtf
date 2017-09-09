@@ -1,0 +1,230 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f36\froman\fcharset238\fprq2 Times New Roman CE;}{\f37\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f39\froman\fcharset161\fprq2 Times New Roman Greek;}{\f40\froman\fcharset162\fprq2 Times New Roman Tur;}
+{\f41\froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f42\froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f43\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f44\froman\fcharset163\fprq2 Times New Roman (Vietnamese);}
+{\f46\fswiss\fcharset238\fprq2 Arial CE;}{\f47\fswiss\fcharset204\fprq2 Arial Cyr;}{\f49\fswiss\fcharset161\fprq2 Arial Greek;}{\f50\fswiss\fcharset162\fprq2 Arial Tur;}{\f51\fswiss\fcharset177\fprq2 Arial (Hebrew);}
+{\f52\fswiss\fcharset178\fprq2 Arial (Arabic);}{\f53\fswiss\fcharset186\fprq2 Arial Baltic;}{\f54\fswiss\fcharset163\fprq2 Arial (Vietnamese);}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 \snext0 Normal;}{\*\cs10 \additive \ssemihidden Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}}{\*\rsidtbl \rsid1052073\rsid3867393\rsid5113564\rsid5902163\rsid7144528\rsid7885735
+\rsid11275023\rsid12608592\rsid12727983}{\*\generator Microsoft Word 10.0.2627;}{\info{\title Winsock Tutorial using the dll made by 39ster}{\author Luke}{\operator Luke}{\creatim\yr2005\mo10\dy23\hr12\min49}{\revtim\yr2006\mo12\dy23\hr19\min7}{\version4}
+{\edmins1}{\nofpages6}{\nofwords1880}{\nofchars10718}{\*\company .}{\nofcharsws12573}{\vern16437}}\margl1797\margr1247 \widowctrl\ftnbj\aenddoc\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\hyphcaps0\horzdoc\dghspace120\dgvspace120\dghorigin1701
+\dgvorigin1984\dghshow0\dgvshow3\jcompress\viewkind4\viewscale100\nolnhtadjtbl\rsidroot3867393 \fet0\sectd \linex0\sectdefaultcl\sectrsid3867393\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang 
+{\pntxtb (}{\pntxta )}}\pard\plain \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 \fs24\lang1033\langfe1033\cgrid\langnp1033\langfenp1033 {\b\f1\fs28\insrsid12608592 Winsock Tutorial using the dll made by 39ster
+\par 
+\par }{\b\f1\insrsid12608592 2 player pong}{\b\f1\insrsid3867393  using UDP and TCP}{\b\f1\insrsid12608592 
+\par 
+\par }{\b\f1\insrsid3867393 
+\par }{\f1\insrsid12608592 In this tutorial i will teach you how to use my winsock dll to create a online game}{\f1\insrsid3867393  using both UDP and TCP.}{\f1\insrsid12608592 
+\par 
+\par }{\b\f1\fs40\insrsid3867393\charrsid3867393 Advantages of UDP}{\b\f1\fs40\insrsid3867393 
+\par }{\f1\insrsid3867393 The big advantage of UDP is its speed and }{\f1\insrsid5113564 low }{\f1\insrsid3867393 bandwidth use. UDP is a lot faster then }{\f1\insrsid5113564 TCP}{\f1\insrsid3867393 
+ and should be utilized in a game were the main packet is sent continuously}{\f1\insrsid12727983 . Also UDP is connectionless so there is no connecting involve. You just send the message to the right IP and port and it}{\f1\insrsid5113564 \rquote }{
+\f1\insrsid12727983 s done.}{\f1\insrsid3867393 
+\par 
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0\pararsid3867393 {\b\f1\fs40\insrsid5113564 Dis}{\b\f1\fs40\insrsid5113564\charrsid3867393 advantages}{\b\f1\fs40\insrsid3867393\charrsid3867393  of UDP}{\b\f1\fs40\insrsid3867393 
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 {\f1\insrsid3867393 One disadvantage of using UDP is it is unreliable. There is no guarantee that all your packets will arrive. This is why we also open a TCP connection so important packets can b
+e sent through the TCP socket. Packets like the main packet should be sent through UDP because even if it doesn\rquote t arrive, another one is sent straight after it.
+\par 
+\par }{\f1\insrsid12727983 Another big disadvantage is firewall issues with UDP. UDP requires a configured firewall just as if you were }{\b\f1\insrsid12727983\charrsid12727983 hosting}{\f1\insrsid12727983 
+ a game with TCP. So with UDP even the clients need to have their firewall configured.
+\par }{\f1\insrsid12727983\charrsid3867393 
+\par }{\b\f1\insrsid12608592 Initializing the dll.
+\par }{\f1\insrsid12608592 For the dll to function you need to link the functions inside the dll to your game. To do this simply put in the
+\par creation code of the first room:
+\par dllinit(0, true, false);
+\par 
+\par If the first argument is a number then the dll will load the dll file "39dll.dll". If this is a string then the string will be}{\f1\insrsid12727983  }{\f1\insrsid12608592 the name of the dll. e.g If the first argument is "sock.dll" then the 
+dll file must be named "sock.dll" and it will load it}{\f1\insrsid12727983  }{\f1\insrsid12608592 using that filename.
+\par The second argument is true if you want to use winsock. In this case we do. The third argument should only be}{\f1\insrsid12727983  }{\f1\insrsid12608592 true if we want to use the file functions. In this example this is not 
+needed so we wont load those functions from the
+\par dll.
+\par 
+\par }{\b\f1\fs40\insrsid12608592 Setting up the server.}{\b\f1\insrsid12608592 
+\par }{\f1\insrsid12608592 To create a multiplayer game, one person needs to host the server and the other person needs to connect.
+\par To set up a server using }{\f1\insrsid12727983 the}{\f1\insrsid12608592  dll you first need to create an object which controls the setting up of the server}{\f1\insrsid12727983  }{\f1\insrsid12608592 
+and accepting any new connection. What you will need to do is create a menu that has 2 buttons. The first}{\f1\insrsid5113564  }{\f1\insrsid12608592 button says "Host" and the second button should say "Connect". When the user selects host, make it execute
+}{\f1\insrsid12727983  }{\f1\insrsid12608592 this code "global.master = true;" and make the room change to a room c}{\f1\insrsid5113564 alled "rmWaiting". Create a new}{\f1\insrsid12727983  }{\f1\insrsid12608592 
+object and call it "objWait". In the create event of this object add this code:
+\par 
+\par }{\i\f1\fs20\insrsid12608592 listen = tcplisten(14804, 2, true);}{\i\f1\fs20\insrsid3867393 
+\par }{\i\f1\fs20\insrsid12608592 if(listen <= 0)
+\par \{
+\par   show_message("Failed to listen on port 14804");
+\par   game_end();
+\par \}}{\i\f1\insrsid12608592 
+\par 
+\par }{\f1\insrsid12608592 What that piece of code does is create a listening socke}{\f1\insrsid12727983 t that will listen for any inco}{\f1\insrsid12608592 ming connections on port}{\f1\insrsid12727983  }{\f1\insrsid12608592 
+14804. The port number can be whatever you want but i have used 14804. The second argument is the maximum}{\f1\insrsid12727983  }{\f1\insrsid12608592 
+allowed connections in the waiting list. This is not the maximum allowed people in the game. When someone tries
+\par to connect they are put on the waiting list until the server accepts them. The last argument is set to true because}{\f1\insrsid12727983  }{\f1\insrsid12608592 we want the listening socket to not freeze the game when you are using the tcpaccept}{
+\f1\insrsid12727983 ()}{\f1\insrsid12608592  script and no one is has tried
+\par to connect. The script will return a socket identifier number }{\f1\insrsid12727983 that is bigger than 0 if we succeeded}{\f1\insrsid12608592 . A number <= 0 is returned
+\par if an error }{\f1\insrsid12727983 occurred}{\f1\insrsid12608592 .
+\par The next line checks if we are }{\f1\insrsid12727983 successfully}{\f1\insrsid12608592  listening on port 14804. If the socket identifier is smaller than or equal to 0 then}{\f1\insrsid12727983  }{\f1\insrsid12608592 an error }{\f1\insrsid12727983 
+occurred}{\f1\insrsid12608592  so we end the game.
+\par 
+\par }{\b\f1\insrsid12608592 Accepting new connections. 
+\par }{\f1\insrsid12608592 To accept new connections you need to create a step event for the "objWait" object we created. In the step event add this code:
+\par }{\f1\fs20\insrsid12608592 
+\par }{\i\f1\fs20\insrsid12608592 client = tcpaccept(listen, true);
+\par if(client <= 0) exit;
+\par }{\i\f1\fs20\insrsid3867393 global.udpsock = udpconnect(14805, true);
+\par }{\i\f1\fs20\insrsid12608592 global.otherplayer = client;
+\par }{\i\f1\fs20\insrsid3867393 global.otherip = lastip();
+\par global.otherudpport = 14803;
+\par }{\i\f1\fs20\insrsid12608592 room_goto(rmGame);
+\par 
+\par }{\f1\insrsid12608592 The first line checks the waiting list to see if someone tried to connect to the listen socket. If no one connected then it returns a}{\f1\insrsid12727983  }{\f1\insrsid12608592 
+number smaller than 1. If someone did connect then it creates a new socket and returns its id. This socket will now be used to
+\par send and }{\f1\insrsid12727983 receive}{\f1\insrsid12608592  data from the person who just connected. The second argument in tcpaccept means the new socket will}{\f1\insrsid12727983  }{\f1\insrsid12608592 
+be non-blocking. In this case when you are trying to }{\f1\insrsid12727983 receive}{\f1\insrsid12608592  a message it }{\f1\insrsid12727983 will not freeze the game if there }{\f1\insrsid12608592 is no message to be}{\f1\insrsid12727983  received}{
+\f1\insrsid12608592 .}{\f1\insrsid12727983 
+\par }{\f1\insrsid12608592 The second line checks if tcpaccept}{\f1\insrsid12727983 ()}{\f1\insrsid12608592  returned an error. If it did then it exits the script.
+\par }{\f1\insrsid12727983 Every }{\f1\insrsid12608592 line }{\f1\insrsid12727983 of code after the second line}{\f1\insrsid12608592  will only be executed if the}{\f1\insrsid12727983 re}{\f1\insrsid12608592  was no error. The thi}{\f1\insrsid12727983 r}{
+\f1\insrsid12608592 d line }{\f1\insrsid12727983 creates a UDP socket which will be used to send messages through the UDP protocol. The next line sets the }{\f1\insrsid12608592 global variable "global.otherplayer"}{\f1\insrsid12727983  }{
+\f1\insrsid12608592 to the socket id that tcpaccept() returned.}{\f1\insrsid12727983  The next line then gets the IP address of the player that was last accepted and stores it in the variable \'93global.otherip\'94
+. This will be used when sending a UDP message to the other player. The next line stores the port that the UDP socket is using on the remote computer into the variable \'93global.otherudpport\'94. This will be used whe
+n sending a UDP message to the other player. }{\f1\insrsid12608592 The }{\f1\insrsid12727983 last}{\f1\insrsid12608592  l}{\f1\insrsid12727983 ine goes to the playing room. (Y}{\f1\insrsid12608592 ou needed to create that room btw).
+\par 
+\par }{\b\f1\fs40\insrsid12608592 Connecting to the server.
+\par }{\f1\insrsid12608592 To join a multiplayer game we need to connect to a server. In the room where you have the button "Host" and the button "Connect", make}{\f1\insrsid12727983  }{\f1\insrsid12608592 
+it so when the player clicks connect it executes this code:
+\par }{\i\f1\fs20\insrsid12608592 global.master = false;
+\par server = tcpConnect("127.0.0.1", 14804, true);
+\par if(server <= 0)
+\par \{
+\par   show_message("Unable to connect to server");
+\par   game_end();
+\par }{\i\f1\fs20\insrsid3867393   exit;
+\par }{\i\f1\fs20\insrsid12608592 \}
+\par global.otherplayer = server;
+\par }{\i\f1\fs20\insrsid3867393 global.udp = udpconnect(14803, true);
+\par global.otherip = tcpip(server);
+\par global.otherudpport = 14805;
+\par }{\i\f1\fs20\insrsid12608592 room_goto(rmGame);
+\par 
+\par }{\f1\insrsid12608592 The first line sets the global variable "master" to false. This is because we are not the server. We are the client connecting to the
+\par server. The second line makes the actual connection to the server.
+\par The first argument in tcpConnect is the ip address you want to connect to. If you are just testing locally use the address "127.0.0.1".
+\par The second argument is the port number to connect to. The third argument is }{\f1\insrsid5113564 whether}{\f1\insrsid12608592  to use blocking or non blocking mode. We}{\f1\insrsid5113564  }{\f1\insrsid12608592 
+set it true which means non-blocking. This makes it so }{\f1\insrsid5113564 whenever we try and send or rec}{\f1\insrsid12608592 e}{\f1\insrsid5113564 i}{\f1\insrsid12608592 ve a message, the game }{\f1\insrsid5113564 doesn\rquote t}{\f1\insrsid12608592 
+ freeze}{\f1\insrsid5113564  until}{\f1\insrsid12608592  the operation finished. If tcpConnect }{\f1\insrsid5113564 successfully}{\f1\insrsid12608592  connected and was accepted by the server, the variable "server" should now
+\par contain the socket id. If a}{\f1\insrsid5113564 n}{\f1\insrsid12608592  error }{\f1\insrsid5113564 occurred}{\f1\insrsid12608592  a number < 1 will be returned.
+\par 
+\par The next line checks if an error }{\f1\insrsid5113564 occurred}{\f1\insrsid12608592 . An error could be because the server }{\f1\insrsid5113564 doesn\rquote t}{\f1\insrsid12608592  exist or the server }{\f1\insrsid5113564 didn\rquote t}{
+\f1\insrsid12608592  accept us. If an
+\par error did occur then the game will end.
+\par 
+\par If no error occurs then the global variable "otherplayer" now becomes the socket id that the variable "server" has. }{\f1\insrsid5113564 Then it opens a UDP socket on the port \'9314803\'94
+ and sets it to non-blocking mode. The next line retrieves the IP address of the server and stores it in the variable \'93global.otherip\'94 which wil
+l be used when sending UDP messages. The next line then stores the port number that the host is using for its UDP socket and stores it in \'93global.otherudpport\'94. }{\f1\insrsid12608592 Then the game will}{\f1\insrsid5113564  }{\f1\insrsid12608592 
+start when we use room_goto().
+\par 
+\par }{\b\i\f1\fs40\insrsid7144528 Sending and rec}{\b\i\f1\fs40\insrsid12608592 e}{\b\i\f1\fs40\insrsid7144528 i}{\b\i\f1\fs40\insrsid12608592 ving messages
+\par }{\f1\insrsid12608592 For our game to work we need to know the y position of the paddle that the other player controls and the client needs to know the x, y
+\par position of the ball which will be controlled by the server.
+\par 
+\par }{\b\f1\insrsid12608592 Sending
+\par }{\f1\insrsid12608592 In the paddle which is controlled by you, you must send your Y co-ordinate to the other player so they can draw your paddle in the
+\par right position. To do this, put this code in both the keyboard UP event and the keyboard DOWN event:
+\par 
+\par }{\i\f1\fs20\insrsid12608592 clearbuffer();
+\par writebyte(0);
+\par writeshort(y);
+\par sendmessage(global.}{\i\f1\fs20\insrsid3867393 udp}{\i\f1\fs20\insrsid5113564 sock}{\i\f1\fs20\insrsid3867393 , global.otherip, global.otherudpport}{\i\f1\fs20\insrsid12608592 );
+\par 
+\par }{\f1\insrsid12608592 The first line clears the internal buffer of any data. This is used in case there is data already in the buffer. The second line writes the byte
+\par that represents the Message Id. In this game the message id 0 will indicate the message containing the Y position.
+\par The next line writes the actual Y position to the buffer. We have used the data type "short" because a short can be any number between
+\par -32000 to +32000. A short utilizes 2 bytes. If we had used one byte to represent the Y position and the Y position is bigger than 255 it will end up being not what you
+\par wanted. The last line sends all the data in the inter}{\f1\insrsid7144528 nal buffer to the other player through the UDP socket. The second argument in sendmessage is the IP of the person t
+o send the message to. The third argument is the remote port to send it to. }{\f1\insrsid12608592 In this case the data is the Message Id and the 2 bytes
+\par used for the Y position.
+\par 
+\par Now we need to send the x, y position }{\f1\insrsid7144528 of the ball }{\f1\insrsid12608592 to the other player if we are the server. To do this put in the step event of the ball object:
+\par 
+\par if(!global.master)exit;
+\par }\pard \ql \li0\ri560\nowidctlpar\tx8640\faauto\rin560\lin0\itap0\pararsid3867393 {\i\f1\fs20\insrsid12608592 clearbuffer();
+\par writebyte(1);
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 {\i\f1\fs20\insrsid12608592 writeshort(x);
+\par writeshort(y);
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0\pararsid3867393 {\i\f1\fs20\insrsid3867393 sendmessage(global.udp}{\i\f1\fs20\insrsid5113564 sock}{\i\f1\fs20\insrsid3867393 , global.otherip, global.otherudpport);
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 {\i\f1\fs20\insrsid12608592 
+\par }{\f1\insrsid12608592 The first line checks to see if we are the server. If we are NOT the server then exit the }{\f1\insrsid5902163 script}{\f1\insrsid12608592  and do not execute the code below.
+\par If however we are the server then first clear the internal buffer. Now write the Message Id "1" which will indicate the message is}{\f1\insrsid5902163  }{\f1\insrsid12608592 
+the balls position. Now write a short which represents the x co-ordinate and write another short which represents the y co-ordinate.
+\par Now just send }{\f1\insrsid7144528 the message to the other player through the UDP socket using their IP and remote port.}{\f1\insrsid12608592 
+\par 
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0\pararsid7144528 {\b\f1\insrsid7144528 Sending chat messages
+\par }{\f1\insrsid7144528 Below is the code we use for sending strings:
+\par }\pard \ql \li0\ri560\nowidctlpar\tx8640\faauto\rin560\lin0\itap0\pararsid7144528 {\i\f1\fs20\insrsid7144528 clearbuffer();
+\par writebyte(2);         //chat message id
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0\pararsid7144528 {\i\f1\fs20\insrsid7144528 w}{\i\f1\fs20\insrsid7885735 ritestring(\'93Hello other player\'94}{\i\f1\fs20\insrsid7144528 );
+\par sendmessage(global.otherplayer);
+\par }{\f1\insrsid7144528 
+\par The second line is the ID we will use for chat messages. The third line is used to write the chat string to the buffer. The last line sends the message over the TCP port because we want to make sure it arrives.
+\par }{\f1\insrsid7144528\charrsid7144528 
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 {\b\f1\insrsid7144528 Rec}{\b\f1\insrsid12608592 e}{\b\f1\insrsid7144528 i}{\b\f1\insrsid12608592 ving a message.}{\f1\insrsid12608592 
+\par In the paddl}{\f1\insrsid3867393 e that you do not control}{\f1\insrsid7144528 ..}{\f1\insrsid3867393 .}{\f1\insrsid12608592 the one which is controlled by the other player, put this code in the step event:}{\i\f1\fs20\insrsid12608592 
+\par var size;
+\par while(true)
+\par \{
+\par }{\i\f1\fs20\insrsid11275023   size = rec}{\i\f1\fs20\insrsid3867393 e}{\i\f1\fs20\insrsid11275023 i}{\i\f1\fs20\insrsid3867393 vemessage(global.udp}{\i\f1\fs20\insrsid5113564 sock}{\i\f1\fs20\insrsid3867393 );   //try receive a message on the udp socket
+
+\par }\pard \ql \li0\ri-7\nowidctlpar\faauto\rin-7\lin0\itap0\pararsid3867393 {\i\f1\fs20\insrsid3867393   if(size <= 0) }{\i\f1\fs20\insrsid11275023 size = rec}{\i\f1\fs20\insrsid12608592 e}{\i\f1\fs20\insrsid11275023 i}{\i\f1\fs20\insrsid12608592 
+vemessage(global.otherplayer);}{\i\f1\fs20\insrsid3867393  //if no }{\i\f1\fs20\insrsid7144528 udp}{\i\f1\fs20\insrsid3867393  message try receive a tcp message}{\i\f1\fs20\insrsid12608592 
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 {\i\f1\fs20\insrsid12608592   if(size < 0) break;
+\par   if(size == 0)
+\par   \{
+\par     show_message("The other player left the game");
+\par     game_end();
+\par   \}
+\par   messageid = readbyte();
+\par   switch(messageid)
+\par   \{
+\par     case 0:
+\par       y = readshort();
+\par     break;
+\par     
+\par     case 1:
+\par       objBall.x = readshort();
+\par       objBall.y = readshort();:
+\par     break;
+\par }{\i\f1\fs20\insrsid7144528 
+\par   case 2:
+\par     chatmessage = readstring();
+\par     show_message(chatmessage);
+\par   break;
+\par }{\i\f1\fs20\insrsid12608592   \}
+\par \}
+\par 
+\par }{\f1\insrsid12608592 First this creates an infinite loop using while(true).}{\f1\insrsid1052073  The first line of the loop rec}{\f1\insrsid12608592 e}{\f1\insrsid1052073 i}{\f1\insrsid12608592 ves any messages from the other player }{\f1\insrsid1052073 
+that was sent to the UDP sockets }{\f1\insrsid12608592 and sets the}{\f1\insrsid1052073  }{\f1\insrsid12608592 variable }{\f1\insrsid1052073 "size" to how much bytes we rec}{\f1\insrsid12608592 e}{\f1\insrsid1052073 i}{\f1\insrsid12608592 v
+ed. The second line checks to see if no message was rece}{\f1\insrsid1052073 i}{\f1\insrsid12608592 ved. If no message was }{\f1\insrsid1052073 received then try and receive a TCP message. If no TCP message was received then exit the loop.}{
+\f1\insrsid12608592  The }{\f1\insrsid1052073 next}{\f1\insrsid12608592  line checks to see if the other player disconnected from the game. If the message size == 0 
+\par that means the player left the game.
+\par If the player did leave, t}{\f1\insrsid1052073 hen end the game. If we did rec}{\f1\insrsid12608592 e}{\f1\insrsid1052073 i}{\f1\insrsid12608592 ve a message then all data from the message is placed inside the internal buffer.}{\f1\insrsid1052073  }{
+\f1\insrsid12608592 We can now use the buffer scripts to return the data from the message. The first part returns the message ID}{\f1\insrsid1052073  (where it says \'93messageid = readbyte()\'94}{\f1\insrsid12608592 .
+\par After that it uses the switch() statement to check what the ID equals. If the ID is 0 then this means the message is for the other players
+\par y co-ordinate. We simply use readshort() to return the y position. Remember because we wrote the Y position as a short, we now must
+\par read the Y position using a short.
+\par 
+\par If the Message ID equals 1, which represents the balls x, y position then use readshort() to set the balls x position to the right place and
+\par readshort() again to set the balls y position in the right place.
+\par }{\f1\insrsid1052073 
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0\pararsid1052073 {\f1\insrsid1052073 If the Message ID equals 2, which represents a chat message then copy the chat string to the variable \'93chatmessage\'94 using \'93readstring()\'94
+ then display the chat message.
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0 {\f1\insrsid1052073 
+\par }{\f1\insrsid12608592 
+\par }{\b\f1\fs40\insrsid12608592 Freeing the dll
+\par }{\f1\insrsid12608592 If you dont want any nasty error messages when your game ends then you must free the dll from memory. To do this first create an object}{\f1\insrsid1052073  }{\f1\insrsid12608592 that will be in every room. Now in th
+e game end event of that object just put dllfree(). This will free winsock and free all memory used}{\f1\insrsid1052073  }{\f1\insrsid12608592 by the internal buffer.
+\par }{\f1\insrsid3867393 
+\par }\pard \ql \li0\ri0\nowidctlpar\faauto\rin0\lin0\itap0\pararsid3867393 {\b\f1\fs40\insrsid3867393 Closing the sockets
+\par }{\f1\insrsid3867393 When finished with the dll you should close all sockets opened during the game. To do this just use closesocket(socketid); on all the sockets that were used. Don\rquote t forget to also close the listening socket.}{
+\f1\insrsid3867393\charrsid3867393 
+\par }{\insrsid3867393\charrsid3867393 
+\par }}

@@ -1,0 +1,113 @@
+//Game Index 7: Sacred Offerings
+//Keyed by Master Index
+//1003-1012
+
+Name[1003] = "Sacred Offerings Board";
+Game[1003] = "SacredOfferings";
+Object[1003] = "obj_SOBoard2";
+Type[1003] = "Board";
+SubType[1003] = "SacredOfferings";
+Faction[1003] = "SacredOfferings";
+Edition[1003] = "Base";
+Description[1003] = "Placeholder for pieces.  For 2 players.";
+Value[1003] = "0";
+Cost[1003] = "";
+
+Name[1004] = "2 Player Board";
+Game[1004] = "SacredOfferings";
+Object[1004] = "obj_SOBoard3";
+Type[1004] = "Board";
+SubType[1004] = "SacredOfferings";
+Faction[1004] = "SacredOfferings";
+Edition[1004] = "Base";
+Description[1004] = "Placeholder for pieces.  For 3 players.";
+Value[1004] = "0";
+Cost[1004] = "";
+
+Name[1005] = "3 Player Board";
+Game[1005] = "SacredOfferings";
+Object[1005] = "obj_SOBoard4";
+Type[1005] = "Board";
+SubType[1005] = "SacredOfferings";
+Faction[1005] = "SacredOfferings";
+Edition[1005] = "Base";
+Description[1005] = "Placeholder for pieces.  For 4 players.";
+Value[1005] = "0";
+Cost[1005] = "";
+
+Name[1006] = "4 Player Board";
+Game[1006] = "SacredOfferings";
+Object[1006] = "obj_SOBoard5";
+Type[1006] = "Board";
+SubType[1006] = "SacredOfferings";
+Faction[1006] = "SacredOfferings";
+Edition[1006] = "Base";
+Description[1006] = "Placeholder for pieces.  For 5 players.";
+Value[1006] = "0";
+Cost[1006] = "";
+
+Name[1007] = "5 Player Board";
+Game[1007] = "SacredOfferings";
+Object[1007] = "obj_SOBoard6";
+Type[1007] = "Board";
+SubType[1007] = "SacredOfferings";
+Faction[1007] = "SacredOfferings";
+Edition[1007] = "Base";
+Description[1007] = "Placeholder for pieces.  For 6 players.";
+Value[1007] = "0";
+Cost[1007] = "";
+
+Name[1008] = "1pt Person";
+Game[1008] = "SacredOfferings";
+Object[1008] = "obj_SOPerson1";
+Type[1008] = "Board";
+SubType[1008] = "SacredOfferings";
+Faction[1008] = "SacredOfferings";
+Edition[1008] = "Base";
+Description[1008] = "This is worth 1 point against your opponent.";
+Value[1008] = "1";
+Cost[1008] = "";
+
+Name[1009] = "2pt Person";
+Game[1009] = "SacredOfferings";
+Object[1009] = "obj_SOPerson2";
+Type[1009] = "Board";
+SubType[1009] = "SacredOfferings";
+Faction[1009] = "SacredOfferings";
+Edition[1009] = "Base";
+Description[1009] = "This is worth 2 points against your opponent.";
+Value[1009] = "2";
+Cost[1009] = "";
+
+Name[1010] = "3pt Person";
+Game[1010] = "SacredOfferings";
+Object[1010] = "obj_SOPerson3";
+Type[1010] = "Board";
+SubType[1010] = "SacredOfferings";
+Faction[1010] = "SacredOfferings";
+Edition[1010] = "Base";
+Description[1010] = "This is worth 3 points against your opponent.";
+Value[1010] = "3";
+Cost[1010] = "";
+
+Name[1011] = "4pt Person";
+Game[1011] = "SacredOfferings";
+Object[1011] = "obj_SOPerson4";
+Type[1011] = "Board";
+SubType[1011] = "SacredOfferings";
+Faction[1011] = "SacredOfferings";
+Edition[1011] = "Base";
+Description[1011] = "This is worth 4 points against your opponent.";
+Value[1011] = "4";
+Cost[1011] = "";
+
+Name[1012] = "5pt Person";
+Game[1012] = "SacredOfferings";
+Object[1012] = "obj_SOPerson5";
+Type[1012] = "Board";
+SubType[1012] = "SacredOfferings";
+Faction[1012] = "SacredOfferings";
+Edition[1012] = "Base";
+Description[1012] = "This is worth 5 points against your opponent.";
+Value[1012] = "5";
+Cost[1012] = "";

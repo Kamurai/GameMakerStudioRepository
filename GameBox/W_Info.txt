@@ -1,0 +1,377 @@
+//Game Index 8: The Way
+//Keyed by Master Index
+//1013-1045
+
+Name[1013] = "The Way Board";
+Game[1013] = "TheWay";
+Object[1013] = "obj_TheWayBoard";
+Type[1013] = "Board";
+SubType[1013] = "TheWay";
+Faction[1013] = "TheWay";
+Edition[1013] = "Base";
+Description[1013] = "Placeholder for pieces.  For 2-4 players.";
+Value[1013] = "0";
+Cost[1013] = "";
+
+Name[1014] = "Person";
+Game[1014] = "TheWay";
+Object[1014] = "obj_TheWayPerson";
+Type[1014] = "Board";
+SubType[1014] = "TheWay";
+Faction[1014] = "TheWay";
+Edition[1014] = "Base";
+Description[1014] = "Player marker.";
+Value[1014] = "0";
+Cost[1014] = "";
+
+Name[1014] = "1T 1M Air Card";
+Game[1014] = "TheWay";
+Object[1014] = "obj_CardAir1T1M";
+Type[1014] = "Card";
+SubType[1014] = "Movement";
+Faction[1014] = "Air";
+Edition[1014] = "Base";
+Description[1014] = "Move 1 target 1 space towards Air.";
+Value[1014] = "0";
+Cost[1014] = "";
+
+Name[1015] = "1T 1M Earth Card";
+Game[1015] = "TheWay";
+Object[1015] = "obj_CardEarth1T1M";
+Type[1015] = "Card";
+SubType[1015] = "Movement";
+Faction[1015] = "Earth";
+Edition[1015] = "Base";
+Description[1015] = "Move 1 target 1 space towards Earth.";
+Value[1015] = "0";
+Cost[1015] = "";
+
+Name[1016] = "1T 1M Fire Card";
+Game[1016] = "TheWay";
+Object[1016] = "obj_CardFire1T1M";
+Type[1016] = "Card";
+SubType[1016] = "Movement";
+Faction[1016] = "Fire";
+Edition[1016] = "Base";
+Description[1016] = "Move 1 target 1 space towards Fire.";
+Value[1016] = "0";
+Cost[1016] = "";
+
+Name[1029] = "1T 1M Water Card";
+Game[1029] = "TheWay";
+Object[1029] = "obj_CardWater1T1M";
+Type[1029] = "Card";
+SubType[1029] = "Movement";
+Faction[1029] = "Water";
+Edition[1029] = "Base";
+Description[1029] = "Move 1 target 1 space towards Water.";
+Value[1029] = "0";
+Cost[1029] = "";
+
+Name[1018] = "All T 1M Air Card";
+Game[1018] = "TheWay";
+Object[1018] = "obj_CardAirAllT1M";
+Type[1018] = "Card";
+SubType[1018] = "Movement";
+Faction[1018] = "Air";
+Edition[1018] = "Base";
+Description[1018] = "Move all targets 1 space towards Air.";
+Value[1018] = "0";
+Cost[1018] = "";
+
+Name[1019] = "All T 1M Earth Card";
+Game[1019] = "TheWay";
+Object[1019] = "obj_CardEarthAllT1M";
+Type[1019] = "Card";
+SubType[1019] = "Movement";
+Faction[1019] = "Earth";
+Edition[1019] = "Base";
+Description[1019] = "Move all targets 1 space towards Earth.";
+Value[1019] = "0";
+Cost[1019] = "";
+
+Name[1020] = "All T 1M Fire Card";
+Game[1020] = "TheWay";
+Object[1020] = "obj_CardFireAllT1M";
+Type[1020] = "Card";
+SubType[1020] = "Movement";
+Faction[1020] = "Fire";
+Edition[1020] = "Base";
+Description[1020] = "Move all targets 1 space towards Fire.";
+Value[1020] = "0";
+Cost[1020] = "";
+
+Name[1021] = "All T 1M Water Card";
+Game[1021] = "TheWay";
+Object[1021] = "obj_CardWaterAllT1M";
+Type[1021] = "Card";
+SubType[1021] = "Movement";
+Faction[1021] = "Water";
+Edition[1021] = "Base";
+Description[1021] = "Move all targets 1 space towards Water.";
+Value[1021] = "0";
+Cost[1021] = "";
+
+Name[1022] = "All T 1M Center Card";
+Game[1022] = "TheWay";
+Object[1022] = "obj_CardCenterAllT1M";
+Type[1022] = "Card";
+SubType[1022] = "Movement";
+Faction[1022] = "Center";
+Edition[1022] = "Base";
+Description[1022] = "Move all targets 1 space towards the Center.";
+Value[1022] = "0";
+Cost[1022] = "";
+
+Name[1023] = "1T 2M Air Card";
+Game[1023] = "TheWay";
+Object[1023] = "obj_CardAir1T2M";
+Type[1023] = "Card";
+SubType[1023] = "Movement";
+Faction[1023] = "Air";
+Edition[1023] = "Base";
+Description[1023] = "Move 1 target 2 spaces towards Air.";
+Value[1023] = "0";
+Cost[1023] = "";
+
+Name[1024] = "1T 2M Earth Card";
+Game[1024] = "TheWay";
+Object[1024] = "obj_CardEarth1T2M";
+Type[1024] = "Card";
+SubType[1024] = "Movement";
+Faction[1024] = "Earth";
+Edition[1024] = "Base";
+Description[1024] = "Move 1 target 2 spaces towards Earth.";
+Value[1024] = "0";
+Cost[1024] = "";
+
+Name[1025] = "1T 2M Fire Card";
+Game[1025] = "TheWay";
+Object[1025] = "obj_CardFire1T2M";
+Type[1025] = "Card";
+SubType[1025] = "Movement";
+Faction[1025] = "Fire";
+Edition[1025] = "Base";
+Description[1025] = "Move 1 target 2 spaces towards Fire.";
+Value[1025] = "0";
+Cost[1025] = "";
+
+Name[1026] = "1T 2M Water Card";
+Game[1026] = "TheWay";
+Object[1026] = "obj_CardWater1T2M";
+Type[1026] = "Card";
+SubType[1026] = "Movement";
+Faction[1026] = "Water";
+Edition[1026] = "Base";
+Description[1026] = "Move 1 target 2 spaces towards Water.";
+Value[1026] = "0";
+Cost[1026] = "";
+
+Name[1027] = "2T 1M Air, Air Card";
+Game[1027] = "TheWay";
+Object[1027] = "obj_CardAirAir2T1M";
+Type[1027] = "Card";
+SubType[1027] = "Movement";
+Faction[1027] = "Air";
+Edition[1027] = "Base";
+Description[1027] = "Move 1 target 1 space towards Air.  Then move 1 target 1 space towards Air.";
+Value[1027] = "0";
+Cost[1027] = "";
+
+Name[1028] = "2T 1M Air, Earth Card";
+Game[1028] = "TheWay";
+Object[1028] = "obj_CardAirEarth2T1M";
+Type[1028] = "Card";
+SubType[1028] = "Movement";
+Faction[1028] = "Air";
+Edition[1028] = "Base";
+Description[1028] = "Move 1 target 1 space towards Air.  Then move 1 target 1 space towards Earth.";
+Value[1028] = "0";
+Cost[1028] = "";
+
+Name[1029] = "2T 1M Air, Fire Card";
+Game[1029] = "TheWay";
+Object[1029] = "obj_CardAirFire2T1M";
+Type[1029] = "Card";
+SubType[1029] = "Movement";
+Faction[1029] = "Air";
+Edition[1029] = "Base";
+Description[1029] = "Move 1 target 1 space towards Air.  Then move 1 target 1 space towards Fire.";
+Value[1029] = "0";
+Cost[1029] = "";
+
+Name[1030] = "2T 1M Air, Water Card";
+Game[1030] = "TheWay";
+Object[1030] = "obj_CardAirWater2T1M";
+Type[1030] = "Card";
+SubType[1030] = "Movement";
+Faction[1030] = "Air";
+Edition[1030] = "Base";
+Description[1030] = "Move 1 target 1 space towards Air.  Then move 1 target 1 space towards Water.";
+Value[1030] = "0";
+Cost[1030] = "";
+
+Name[1031] = "2T 1M Earth, Air Card";
+Game[1031] = "TheWay";
+Object[1031] = "obj_CardEarthAir2T1M";
+Type[1031] = "Card";
+SubType[1031] = "Movement";
+Faction[1031] = "Earth";
+Edition[1031] = "Base";
+Description[1031] = "Move 1 target 1 space towards Earth.  Then move 1 target 1 space towards Air.";
+Value[1031] = "0";
+Cost[1031] = "";
+
+Name[1032] = "2T 1M Earth, Earth Card";
+Game[1032] = "TheWay";
+Object[1032] = "obj_CardEarthEarth2T1M";
+Type[1032] = "Card";
+SubType[1032] = "Movement";
+Faction[1032] = "Earth";
+Edition[1032] = "Base";
+Description[1032] = "Move 1 target 1 space towards Earth.  Then move 1 target 1 space towards Earth.";
+Value[1032] = "0";
+Cost[1032] = "";
+
+Name[1033] = "2T 1M Earth, Fire Card";
+Game[1033] = "TheWay";
+Object[1033] = "obj_CardEarthFire2T1M";
+Type[1033] = "Card";
+SubType[1033] = "Movement";
+Faction[1033] = "Earth";
+Edition[1033] = "Base";
+Description[1033] = "Move 1 target 1 space towards Earth.  Then move 1 target 1 space towards Fire.";
+Value[1033] = "0";
+Cost[1033] = "";
+
+Name[1034] = "2T 1M Earth, Water Card";
+Game[1034] = "TheWay";
+Object[1034] = "obj_CardEarthWater2T1M";
+Type[1034] = "Card";
+SubType[1034] = "Movement";
+Faction[1034] = "Earth";
+Edition[1034] = "Base";
+Description[1034] = "Move 1 target 1 space towards Earth.  Then move 1 target 1 space towards Water.";
+Value[1034] = "0";
+Cost[1034] = "";
+
+Name[1035] = "2T 1M Fire, Air Card";
+Game[1035] = "TheWay";
+Object[1035] = "obj_CardFireAir2T1M";
+Type[1035] = "Card";
+SubType[1035] = "Movement";
+Faction[1035] = "Fire";
+Edition[1035] = "Base";
+Description[1035] = "Move 1 target 1 space towards Fire.  Then move 1 target 1 space towards Air.";
+Value[1035] = "0";
+Cost[1035] = "";
+
+Name[1036] = "2T 1M Fire, Earth Card";
+Game[1036] = "TheWay";
+Object[1036] = "obj_CardFireEarth2T1M";
+Type[1036] = "Card";
+SubType[1036] = "Movement";
+Faction[1036] = "Fire";
+Edition[1036] = "Base";
+Description[1036] = "Move 1 target 1 space towards Fire.  Then move 1 target 1 space towards Earth.";
+Value[1036] = "0";
+Cost[1036] = "";
+
+Name[1037] = "2T 1M Fire, Fire Card";
+Game[1037] = "TheWay";
+Object[1037] = "obj_CardFireFire2T1M";
+Type[1037] = "Card";
+SubType[1037] = "Movement";
+Faction[1037] = "Fire";
+Edition[1037] = "Base";
+Description[1037] = "Move 1 target 1 space towards Fire.  Then move 1 target 1 space towards Fire.";
+Value[1037] = "0";
+Cost[1037] = "";
+
+Name[1038] = "2T 1M Fire, Water Card";
+Game[1038] = "TheWay";
+Object[1038] = "obj_CardFireWater2T1M";
+Type[1038] = "Card";
+SubType[1038] = "Movement";
+Faction[1038] = "Fire";
+Edition[1038] = "Base";
+Description[1038] = "Move 1 target 1 space towards Fire.  Then move 1 target 1 space towards Water.";
+Value[1038] = "0";
+Cost[1038] = "";
+
+Name[1039] = "2T 1M Water, Air Card";
+Game[1039] = "TheWay";
+Object[1039] = "obj_CardWaterAir2T1M";
+Type[1039] = "Card";
+SubType[1039] = "Movement";
+Faction[1039] = "Water";
+Edition[1039] = "Base";
+Description[1039] = "Move 1 target 1 space towards Water.  Then move 1 target 1 space towards Air.";
+Value[1039] = "0";
+Cost[1039] = "";
+
+Name[1040] = "2T 1M Water, Earth Card";
+Game[1040] = "TheWay";
+Object[1040] = "obj_CardWaterEarth2T1M";
+Type[1040] = "Card";
+SubType[1040] = "Movement";
+Faction[1040] = "Water";
+Edition[1040] = "Base";
+Description[1040] = "Move 1 target 1 space towards Water.  Then move 1 target 1 space towards Earth.";
+Value[1040] = "0";
+Cost[1040] = "";
+
+Name[1041] = "2T 1M Water, Fire Card";
+Game[1041] = "TheWay";
+Object[1041] = "obj_CardWaterFire2T1M";
+Type[1041] = "Card";
+SubType[1041] = "Movement";
+Faction[1041] = "Water";
+Edition[1041] = "Base";
+Description[1041] = "Move 1 target 1 space towards Water.  Then move 1 target 1 space towards Fire.";
+Value[1041] = "0";
+Cost[1041] = "";
+
+Name[1042] = "2T 1M Water, Water Card";
+Game[1042] = "TheWay";
+Object[1042] = "obj_CardWaterWater2T1M";
+Type[1042] = "Card";
+SubType[1042] = "Movement";
+Faction[1042] = "Water";
+Edition[1042] = "Base";
+Description[1042] = "Move 1 target 1 space towards Water.  Then move 1 target 1 space towards Water.";
+Value[1042] = "0";
+Cost[1042] = "";
+
+Name[1043] = "1T 1M Wild Card";
+Game[1043] = "TheWay";
+Object[1043] = "obj_CardWild1T1M";
+Type[1043] = "Card";
+SubType[1043] = "Movement";
+Faction[1043] = "Wild";
+Edition[1043] = "Base";
+Description[1043] = "Move 1 target 1 space towards any direction.";
+Value[1043] = "0";
+Cost[1043] = "";
+
+Name[1044] = "1T 2M Wild Card";
+Game[1044] = "TheWay";
+Object[1044] = "obj_CardWild1T2M";
+Type[1044] = "Card";
+SubType[1044] = "Movement";
+Faction[1044] = "Wild";
+Edition[1044] = "Base";
+Description[1044] = "Move 1 target 2 spaces towards any direction.";
+Value[1044] = "0";
+Cost[1044] = "";
+
+Name[1045] = "2T 1M Wild, Wild Card";
+Game[1045] = "TheWay";
+Object[1045] = "obj_CardWildWild2T1M";
+Type[1045] = "Card";
+SubType[1045] = "Movement";
+Faction[1045] = "Wild";
+Edition[1045] = "Base";
+Description[1045] = "Move 1 target 1 space towards any direction.  Then move 1 target 1 space towards any direction.";
+Value[1045] = "0";
+Cost[1045] = "";

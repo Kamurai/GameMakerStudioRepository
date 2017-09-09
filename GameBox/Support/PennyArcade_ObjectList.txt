@@ -1,0 +1,33 @@
+Penny Arcade Object List:
+Boss Loot:
+	Evil:
+		Satan
+		Cthulu
+		Evil Tycho
+	Good:
+		Tycho's Grandma
+		Santa
+		Cardboard Tube Samurai
+	Gold:
+		Knight Gabriel
+Pax Pox
+Character Cards:
+Unique Cards:
+Standard Cards:
+	Evil:
+		Cardboard Tubes
+		Fleshreaper
+	Good:
+		Quarters
+		Merch
+Stock Cards:
+	Evil:
+	Good:
+	Gold:
+Red Cards:
+	Evil:
+	Good:
+	Gold:
+D20
+Delete Card
+Card Map/Board

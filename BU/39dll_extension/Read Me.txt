@@ -1,0 +1,9 @@
+Files Included:
+-39dll_extension.gex
+-39dll.dll
+
+Description:
+-This extension includes all of 39dll's functions available. However, the dll itself is not included into the extension.
+
+Credit to:
+-39ster (for the wonderful dll)

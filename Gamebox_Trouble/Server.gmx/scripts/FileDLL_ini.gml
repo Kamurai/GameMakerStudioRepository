@@ -1,0 +1,11 @@
+global.deflastmodified=external_define("FileFunctions.dll","lastmodified",dll_stdcall,ty_string,1,ty_string);
+global.defgetdrive=external_define("FileFunctions.dll","getdrive",dll_stdcall,ty_string,1,ty_string);
+global.defgetdir=external_define("FileFunctions.dll","getdir",dll_stdcall,ty_string,1,ty_string);
+global.defgetpath=external_define("FileFunctions.dll","getpath",dll_stdcall,ty_string,1,ty_string);
+global.defgetname=external_define("FileFunctions.dll","getname",dll_stdcall,ty_string,1,ty_string);
+global.defgetext=external_define("FileFunctions.dll","getext",dll_stdcall,ty_string,1,ty_string);
+global.defnewdir=external_define("FileFunctions.dll","newdir",dll_stdcall,ty_real,1,ty_string);
+global.defdeldir=external_define("FileFunctions.dll","deldir",dll_stdcall,ty_real,1,ty_string);
+global.defdelfile=external_define("FileFunctions.dll","delfile",dll_stdcall,ty_real,1,ty_string);
+global.deftotaldiskspace=external_define("FileFunctions.dll","totaldiskspace",dll_stdcall,ty_string,1,ty_real);
+global.deffreediskspace=external_define("FileFunctions.dll","freediskspace",dll_stdcall,ty_string,1,ty_real);
